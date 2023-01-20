@@ -1,0 +1,41 @@
+//General approach
+import java.io.*;
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		//Conventional Method
+		if (n%2 == 0) {
+		    System.out.println("Even");
+		}
+		else {
+		    System.out.println("Odd");
+		}
+		
+	}
+}
+//Alternative approach
+import java.io.*;
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		if((n&1) ==0){
+		    System.out.println("It is an even number");
+		}
+		else{
+		    System.out.println("It is an odd number");
+		}
+		
+		
+	}
+}
+
+
+
